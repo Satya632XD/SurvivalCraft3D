@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Stonefall Frontier</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="ui">
+    <div id="crosshair"></div>
+    <div id="highlight"></div>
+
+    <div id="topLeft">
+      <div class="pill"><strong>Stonefall Frontier</strong><br/>Luanti-inspired voxel sandbox</div>
+      <div class="pill" id="info">Loading...</div>
+    </div>
+
+    <div id="topRight">
+      <div class="pill" id="health"></div>
+      <div class="pill" id="hunger"></div>
+      <div class="pill" id="coords"></div>
+      <div class="pill" id="daytime"></div>
+      <div class="pill" id="weather"></div>
+    </div>
+
+    <div id="hotbarWrap">
+      <div id="tooltip"></div>
+      <div id="hotbar"></div>
+    </div>
+
+    <div id="inventoryPanel"></div>
+    <div id="inventoryActions">
+      <button class="action" id="btnResume">Close</button>
+      <button class="action" id="btnCraftDemo">Loot Demo</button>
+      <button class="action" id="btnSave">Save</button>
+      <button class="action" id="btnReset">Reset</button>
+      <button class="action" id="btnCloseInventory">Done</button>
+    </div>
+
+    <div id="mobileControls">
+      <div class="joystick" id="leftPad"></div>
+      <div class="padButtons">
+        <button id="btnJump">Jump</button>
+        <button id="btnSprint">Sprint</button>
+        <button id="btnSneak">Sneak</button>
+        <button id="btnBreak">Break</button>
+        <button id="btnPlace">Place</button>
+        <button id="btnInventory">Inv</button>
+      </div>
+    </div>
+
+    <div id="death">
+      <div class="card">
+        <h2>You fell to the frontier</h2>
+        <p>Press reset or reload to respawn into a fresh world.</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
